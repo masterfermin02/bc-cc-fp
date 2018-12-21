@@ -18,8 +18,8 @@ class BC_cc_fp_list_users extends WP_List_Table {
     public function __construct() {
 
         parent::__construct( [
-            'singular' => __( 'Customer', 'bc-cc-fp' ), //singular name of the listed records
-            'plural'   => __( 'Customers', 'bc-cc-fp' ), //plural name of the listed records
+            'singular' => __( 'User', 'bc-cc-fp' ), //singular name of the listed records
+            'plural'   => __( 'Users', 'bc-cc-fp' ), //plural name of the listed records
             'ajax'     => false //does this table support ajax?
         ] );
 
@@ -112,7 +112,7 @@ class BC_cc_fp_list_users extends WP_List_Table {
                         $_REQUEST['page'],
                         $item->ID,
                         $update_nonce,
-                        __('Update User Status', 'bc-cc-fp')
+                        __('Active / Inactive', 'bc-cc-fp')
                     ),
                 ];
                 return sprintf('%s %s',
