@@ -6,9 +6,7 @@ BlueCoding Code Challnge.
 
 The WordPress BlueCoding Code Challnge plugin include:
 
-* `.gitignore`. Used to exclude certain files from the repository.
 * `CHANGELOG.md`. The list of changes to the core project.
-* `README.md`. The file that you’re currently reading.
 * A `bc-cc-fp` directory that contains the source code - a fully executable WordPress plugin.
 
 ## Features
@@ -25,9 +23,8 @@ The WordPress BlueCoding Code Challnge plugin include:
 The WordPress BlueCoding Code Challnge plugin can be installed directly into your plugins folder clone the repository and copy the files direcly into:
 
 ```
-cd your-wordpress-folder/wp-content/plugins
+1. Upload `bc-cc-fp` to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
 ```
-
-Go to the admin panel plugins search for your plugin and click activate.
 
 
