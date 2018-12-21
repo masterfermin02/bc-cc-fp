@@ -14,6 +14,8 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 class BC_cc_fp_list_users extends WP_List_Table {
 
+    protected $show_notice = "";
+
     /** Class constructor */
     public function __construct() {
 
@@ -273,6 +275,14 @@ class BC_cc_fp_list_users extends WP_List_Table {
         ) {
 
             $ids = esc_sql( $_POST['user_id'] );
+            if(!is_array($ids))
+            {
+                $ids = [];
+                $this->show_notice = __('Please select at least one user', 'bc-cc-fp');
+
+            }else{
+                $this->show_notice = "";
+            }
             // loop over the array of record IDs and delete them
             foreach ($ids as $id ) {
                 self::update_user_status( $id );
@@ -298,6 +308,11 @@ class BC_cc_fp_list_users extends WP_List_Table {
             [ 'ID' => $user->ID ]
         );
         return $result;
+    }
+
+    public function get_notice()
+    {
+        return $this->show_notice;
     }
 
 }

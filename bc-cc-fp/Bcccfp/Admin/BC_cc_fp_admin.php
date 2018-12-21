@@ -149,7 +149,10 @@ class BC_cc_fp_Admin {
      * Plugin settings page
      */
     public function plugin_settings_page() {
+
+
         ?>
+
 
 
         <div class="wrap">
@@ -170,6 +173,14 @@ class BC_cc_fp_Admin {
                                 <input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>" />
                                 <?php
                                $this->customers_obj->prepare_items();
+                                $notice = $this->customers_obj->get_notice();
+                                ?>
+                                <?php if ( !empty($notice) ): ?>
+                                    <div id="notice" class="error">
+                                        <p><?php echo $notice; ?></p>
+                                    </div>
+                                <?php endif;?>
+                                <?php
                                $this->customers_obj->display(); ?>
                             </form>
                         </div>
