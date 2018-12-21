@@ -204,7 +204,7 @@ class BC_cc_fp_list_users extends WP_List_Table {
      */
     public function get_bulk_actions() {
         $actions = [
-            'bulk_update_user_status' => __('Update User Status', 'bc-cc-fp')
+            'bulk_update_user_status' => __('Toggle User Status', 'bc-cc-fp')
         ];
 
         return $actions;
