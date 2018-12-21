@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-BlueCoding Code Challnge - Fermin Perdomo
+BlueCoding Code Challenge - Fermin Perdomo
 
 == Installation ==
 

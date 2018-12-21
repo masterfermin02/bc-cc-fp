@@ -1,10 +1,10 @@
-# BlueCoding Code Challnge - Fermin Perdomo
+# BlueCoding Code Challenge - Fermin Perdomo
 
-BlueCoding Code Challnge.
+BlueCoding Code Challenge.
 
 ## Contents
 
-The WordPress BlueCoding Code Challnge plugin include:
+The WordPress BlueCoding Code Challenge plugin include:
 
 * `CHANGELOG.md`. The list of changes to the core project.
 * A `bc-cc-fp` directory that contains the source code - a fully executable WordPress plugin.
@@ -20,7 +20,7 @@ The WordPress BlueCoding Code Challnge plugin include:
 
 ## Installation
 
-The WordPress BlueCoding Code Challnge plugin can be installed directly into your plugins folder clone the repository and copy the files direcly into:
+The WordPress BlueCoding Code Challenge plugin can be installed directly into your plugins folder:
 
 ```
 1. Upload `bc-cc-fp` to the `/wp-content/plugins/` directory
